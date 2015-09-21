@@ -103,13 +103,13 @@ Think of it like telling a story:
 ```javascript
 describe('Description/Label', function(){
 
-*beforeEach(function(){
-   // do some work before every test is run
- });
+* beforeEach(function(){
+    // do some work before every test is run
+  });
 
-*afterEach(function(){
-   // do some cleanup/resets after every test is run
- });
+* afterEach(function(){
+    // do some cleanup/resets after every test is run
+  });
 
 });
 ```
@@ -147,9 +147,9 @@ describe('Description/Label', function(){
 describe('Sum', function(){
 
   it('should sum 2 numbers', function() {
-*    expect(sum(1, 1)).toEqual(2);
-*    expect(sum(3, 2)).toEqual(5);
-*    expect(sum(5, 5)).not.toEqual(99);
+*   expect(sum(1, 1)).toEqual(2);
+*   expect(sum(3, 2)).toEqual(5);
+*   expect(sum(5, 5)).not.toEqual(99);
   });
 
 });
@@ -381,3 +381,6 @@ Explain gulps default task versus naming specific tasks and why.
 
 VideoPlayer.js
 VideoPlayer_tests.js
+
+* Note that gulpfile and/or karma.conf file need to be updated to include global deps (i.e. jQuery!)
+* 

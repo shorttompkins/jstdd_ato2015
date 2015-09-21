@@ -1,0 +1,58 @@
+body {
+  font-family: sans-serif;
+}
+
+#mainPlayer {
+  background-image: url('../img/btilc.jpg');
+  background-size: cover;
+  background-position-y: 50%;
+}
+
+.videoPlayer {
+    position: relative;
+    width: 80%;
+    height: 375px;
+    margin: auto auto;
+    border: solid 1px #000000;
+    background-color: #c0c0c0;
+}
+
+.playerChrome {
+  position: absolute;
+  bottom: 0px;
+  padding: 10px;
+  width: 100%;
+  margin: auto auto;
+  background: rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  color: #f0f0f0;
+}
+
+.playerChrome .title {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.playerChrome .indicator-icon {
+  float: left;
+  font-size: 3em;
+}
+
+.playerChrome .time {
+  float: right;
+  font-size: 1.5em;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.playerChrome .progress-bar {
+  width: 80%;
+  height: 50px;
+  background-color: rgba(0, 0, 0, .65);
+  margin-left: 50px;
+}
+
+.playerChrome .progress-bar .elapsed {
+  height: 50px;
+  background-color: rgba(28, 183, 0, 0.7);
+}

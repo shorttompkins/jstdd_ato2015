@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JS TDD :: ATO2015</title>
+    <link rel="stylesheet" href="css/main.css" media="screen" title="no title" charset="utf-8">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <button id="loadButton">Load Video</button> &nbsp; &nbsp;
+
+    <button id="playButton"><i class="fa fa-play"></i> / <i class="fa fa-pause"></i></button>
+    <button id="stopButton"><i class="fa fa-stop"></i></button>
+    <button id="seekFF"><i class="fa fa-forward"></i></button>
+    <button id="seekREW"><i class="fa fa-backward"></i></button>
+
+    <br/><br/>
+
+    <div id="mainPlayer" class="videoPlayer" style="display: none;">
+      <div class="playerChrome">
+        <div class="title">{{title}}</div>
+        <div class="indicator-icon"><i class="fa fa-play"></i></div>
+        <div class="time">
+          <span class="elapsed">0</span> / <span class="total">0</span>
+        </div>
+        <div class="progress-bar">
+          <div class="elapsed" style="width: 0%"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="js/video_player/video_player.js"></script>
+    <script type="text/javascript">
+      var player = new VideoPlayer();
+
+      $('#loadButton').on('click', function(e) {
+        player.load('#mainPlayer', 'http://www.someurl.com/to/a/video.mp4');
+      });
+
+      $('#stopButton').on('click', function(){
+        player.stop();
+      });
+
+      $('#seekFF').on('click', function(){
+        player.seek(30);
+      });
+
+      $('#seekREW').on('click', function(){
+        player.seek(-30);
+      });
+
+      $('#playButton').on('click', function(){
+        player[player.getState('paused') ? 'play' : 'pause']();
+      });
+
+    </script>
+  </body>
+</html>

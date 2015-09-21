@@ -49,6 +49,7 @@
         "$"         : true,
         "JSON"      : true,
         "readJSON"  : true,
+        "VideoPlayer": true,
 
         /* FOR TESTS: */
         "module"     : true,

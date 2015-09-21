@@ -16,7 +16,7 @@ gulp.task('test', function() {
 });
 
 gulp.task('default', function() {
-  gulp.src(['src/js/**/*.js'])
+  gulp.src(['node_modules/jquery/dist/jquery.js','src/js/**/*.js'])
     .pipe(karma({
       configFile: 'karma.conf.js',
       action: 'watch'

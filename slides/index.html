@@ -13,21 +13,27 @@
         font-family: 'Yanone Kaffeesatz';
         font-weight: normal;
       }
+      h1 {
+        line-height: 65px;
+      }
       code {
         background: #e7e8e2;
         border-radius: 5px;
        }
       .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .remark-slide-content, .remark-code, .remark-inline.code { font-size: 30px; line-height: 35px; }
       .remark-inline-code { border-radius: 0px; background-color: #f0f0f0; }
-      .remark-code-line-highlighted     { background-color: #FFF68C; color: #000000; }
+      .remark-code-line-highlighted { background-color: #FFF68C; color: #000000; }
+      .full-image img { width: 100%; }
+      .centered-image img { margin-left: 20%; width: 60%; }
+      .right-image img { float: right; }
     </style>
   </head>
   <body>
 
-    <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
-    </script>
+    <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js"></script>
     <script>
-      var slideshow = remark.create({ sourceUrl: 'markdown.md', highlightLines: true, highlightStyle: 'docco' });
+      var slideshow = remark.create({ sourceUrl: 'content.md', highlightLines: true, highlightStyle: 'docco' });
     </script>
   </body>
 </html>

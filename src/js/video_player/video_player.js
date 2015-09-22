@@ -98,18 +98,4 @@ var VideoPlayer = function() {
   player._reset();
 
   return player;
-  // return {
-  //   state: player.state,
-  //   details: player.details,
-  //
-  //   load: player.load,
-  //   play: player.play,
-  //   pause: player.pause,
-  //   stop: player.stop,
-  //   seek: player.seek,
-  //   getState: player.getState,
-  //   showChrome: player.showChrome,
-  //   hideChrome: player.hideChrome
-  // };
 };
-//})();

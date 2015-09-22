@@ -88,7 +88,7 @@ Suites, specs, assertions, spies, mocks, stubs, wtf?!
 * Describe a piece of code / functionality being tested
 --
 
-* Do some setup work before every test
+* Define setup work before and/or after every test
 --
 
 * It should do exactly what you expect (all possible scenarios!)

@@ -4,7 +4,7 @@ class: center, middle
 
 ### All Things Open 2015
 
-### Jason Krol (a.k.a ShortTompkins)
+### Jason Krol
 
 ---
 
@@ -12,18 +12,21 @@ class: center, middle
 
 .right-image[![alt text](img/jackburton.jpeg)]
 
-* Jason Krol
-* Tweets @ **ShortTompkins** (all the things!)
-* Blogs @ Kroltech.com
-* Currently working at DramaFever.com
-* Dad, Author, Gamer, Geek!
+## Jason Krol
 
-* http://ShortTompkins.JS.org
+<i style="color: #55ACEE;" class="fa fa-twitter"></i> <i class="fa fa-github"></i>  **ShortTompkins**<br/>
+<i style="color: orange;" class="fa fa-rss"></i>  Kroltech.com
+<br/><br/>
+Currently working at:<br/><img src="img/dflogo.png" style="margin-bottom: 10px;"/>
+<br/>
+Dad, Author, Gamer, Geek!
+
+http://ShortTompkins.JS.org
 
 
 ---
 
-# Why Test? (a.k.a Why its awesome!)
+# Why should we test?
 
 .centered-image[![alt text](img/noproblem.gif)]
 
@@ -38,16 +41,15 @@ to the codebase.  Now imagine that sinking feeling in your stomach when it comes
 
 ---
 
-# Why it sucks?
-
-Roughly 50% of FE devs aren't testing<sup>2</sup>
+# Why we probably aren't
 
 .centered-image[![alt text](img/johncena_confused.gif)]
 
+Roughly 50% of FE devs aren't testing<sup>2</sup>
+
 * Its time consuming
-* It can be difficult
+* It can be tedious and difficult
 * Where to start?!
-* Tedious
 
 ???
 Writing tests is hard!  How do you get started? How do you even write a test?!
@@ -403,8 +405,6 @@ gulp.task('default', function() {
 ---
 
 # Run our first Gulp test task!
-
-Lets try again, this time using Gulp:
 
 ```sh
 *$ gulp

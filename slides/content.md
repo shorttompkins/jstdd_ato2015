@@ -244,7 +244,7 @@ describe('window.setTimeout', function(){
 ```sh
 $ mkdir -p jstdd/src/js && cd jstdd
 $ touch src/js/sample.js
-$ touch src/js/sample_test.js
+$ touch src/js/sample_tests.js
 ```
 
 ---
@@ -262,7 +262,7 @@ function sum(a, b) {
 ---
 
 ```javascript
-// sample_test.js:
+// sample_tests.js:
 describe('Sample', function(){
   beforeEach(function () {
     spyOn(window, 'alert');

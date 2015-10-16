@@ -7,7 +7,7 @@ Check out the `/slides` folder to view the actual presentation.  It would be hel
 $ npm install -g http-server
 $ cd slides
 $ http-server
-$ open http://0.0.0.0:8080
+$ open http://0.0.0.0:8080/index.html
 ```
 
 Full source code for the demo is available within `/src`.

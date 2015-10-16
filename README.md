@@ -4,7 +4,7 @@
 Check out the `/slides` folder to view the actual presentation.  It would be helpful to use a local http server:
 
 ```bash
-$ npm install -g http-server
+$ sudo npm install -g http-server
 $ cd slides
 $ http-server
 $ open http://0.0.0.0:8080/index.html

@@ -16,12 +16,12 @@ class: center, middle
 
 <i style="color: #55ACEE;" class="fa fa-twitter"></i> <i class="fa fa-github"></i>  **ShortTompkins**<br/>
 <i style="color: orange;" class="fa fa-rss"></i>  Kroltech.com
-<br/><br/>
-Currently working at:<br/><img src="img/dflogo.png" style="margin-bottom: 10px;"/>
 <br/>
+<img src="img/dflogo.png" style="margin-bottom: 10px;"/>
+<br/><br/>
 Dad, Author, Gamer, Geek!
 
-http://ShortTompkins.JS.org
+**github.com/shorttompkins/JSTDD_ATO2015**
 
 
 ---
@@ -35,10 +35,6 @@ http://ShortTompkins.JS.org
 * Built-in code documentation!
 * Testing can be fun?!
 
-???
-Imagine for a second that you're first day on the job and you're tasked with making even the most minor change
-to the codebase.  Now imagine that sinking feeling in your stomach when it comes time to push it live! It doesn't have to be that way!
-
 ---
 
 # Why we probably aren't
@@ -50,9 +46,6 @@ Roughly 50% of FE devs aren't testing<sup>2</sup>
 * Its time consuming
 * It can be tedious and difficult
 * Where to start?!
-
-???
-Writing tests is hard!  How do you get started? How do you even write a test?!
 
 ---
 
@@ -67,11 +60,6 @@ Writing tests is hard!  How do you get started? How do you even write a test?!
 _Requires node.js and npm installed locally_
 
 .full-image[![alt text](img/logos.png)]
-
-???
-* Jasmine is the library we're using for our assertions.  It provides us with all of the tools and syntax to be able to write and execute our tests.
-* Karma runs our tests
-* Gulp ties our tasks together to make things easy and automated!
 
 ---
 
@@ -126,12 +114,6 @@ describe('Description/Label', function(){
 
 });
 ```
-
-???
- * Do all of your setup and cleanup using `beforeEach` and `afterEach`
- * They do exactly what they sound like - run before and after every single test
- * `var`s should be defined outside of `beforeEach` (inside `describe`) but should be reset/valued within `beforeEach`
- * Use `beforeEach` when running a series of tests against the same function and call the function in the actual `beforeEach`
 
 ---
 
@@ -303,10 +285,6 @@ Locally install karma for the project:
 $ npm install --save-dev karma
 ```
 
-???
-* Explain the different questions/answer options in the karma config options
-* Explain `--save-dev` and take a peek at the package.json
-
 ---
 
 ## Initialize Karma for the project:
@@ -321,10 +299,6 @@ $ karma init
 * `src/js/**/*.js`
 * no exclusions
 * yes (watch for changes)
-
-???
-* Show live demo of `karma init`
-* Take a peek at the karma.conf.js files
 
 ---
 
@@ -347,9 +321,6 @@ PhantomJS 1.9.8: Executed 2 of 2 SUCCESS (0.003 secs / 0.002 secs)
 Why do we need an automated build tool?
 
 .centered-image[![alt text](img/fast_typing.gif)]
-
-???
-Running our tests from the command line is great and all, but the reality is our application is very likely going to have a whole process wrapped around building it for release.  If only to bundle all of our files into a single minified source.  During that build process, we will want our tests to run.  In addition, that watcher stuff that karma did was pretty neat, so we're going to want our app to have watchers that trigger the build as well as tests every time we change a file.
 
 --
 
@@ -420,9 +391,6 @@ PhantomJS 1.9.8: Executed 2 of 2 SUCCESS (0.003 secs / 0.001 secs)
 |
 ```
 
-???
-Explain gulps default task versus naming specific tasks and why.
-
 ---
 
 # Lets look at some real tests!
@@ -433,10 +401,6 @@ Explain gulps default task versus naming specific tasks and why.
 * Uses jQuery
 * 12 functions (100 lines)
 * 46 tests (over 300 lines)
-
-???
-* Note that gulpfile and/or karma.conf file need to be updated to include global deps (i.e. jQuery!)
-*
 
 ---
 

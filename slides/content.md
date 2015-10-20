@@ -21,7 +21,9 @@ class: center, middle
 <br/><br/>
 Dad, Author, Gamer, Geek!
 
+http://shorttompkins.js.org/jstdd
 **github.com/shorttompkins/JSTDD_ATO2015**
+
 
 
 ---

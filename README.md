@@ -1,6 +1,8 @@
 # JS TDD with Jasmine, Karma, Gulp
 ## @ ATO 2015
 
+View the slide presentation here: **http://shorttompkins.js.org/jstdd**
+
 Check out the `/slides` folder to view the actual presentation.  It would be helpful to use a local http server:
 
 ```bash
